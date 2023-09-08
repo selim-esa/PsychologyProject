@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34009.444
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PsychologyProject.Web", "PsychologyProject.Web\PsychologyProject.Web.csproj", "{6BF4798A-7A8D-4425-83E7-5C1B73E13CF6}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PsychologyProject.Business", "PsychologyProject.Business\PsychologyProject.Business.csproj", "{9AA9CD48-A1A1-4152-B08E-655435136BA3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PsychologyProject.Entities", "PsychologyProject.Entities\PsychologyProject.Entities.csproj", "{1307C94A-0F26-4A6F-BE5B-64190433BAFA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PsychologyProject.DataAccess", "PsychologyProject.DataAccess\PsychologyProject.DataAccess.csproj", "{A13F8F81-E684-40C6-8B02-6F2CFDF24F73}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PsychologyProject.Dto", "PsychologyProject.Dto\PsychologyProject.Dto.csproj", "{20C1F4F9-66F2-4791-87D7-576E8D51A98F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PsychologyProject.Cms", "PsychologyProject.Cms\PsychologyProject.Cms.csproj", "{17EC646E-6B10-4101-910C-1D446B1576C7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6BF4798A-7A8D-4425-83E7-5C1B73E13CF6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6BF4798A-7A8D-4425-83E7-5C1B73E13CF6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6BF4798A-7A8D-4425-83E7-5C1B73E13CF6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6BF4798A-7A8D-4425-83E7-5C1B73E13CF6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9AA9CD48-A1A1-4152-B08E-655435136BA3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9AA9CD48-A1A1-4152-B08E-655435136BA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9AA9CD48-A1A1-4152-B08E-655435136BA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9AA9CD48-A1A1-4152-B08E-655435136BA3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1307C94A-0F26-4A6F-BE5B-64190433BAFA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1307C94A-0F26-4A6F-BE5B-64190433BAFA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1307C94A-0F26-4A6F-BE5B-64190433BAFA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1307C94A-0F26-4A6F-BE5B-64190433BAFA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A13F8F81-E684-40C6-8B02-6F2CFDF24F73}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A13F8F81-E684-40C6-8B02-6F2CFDF24F73}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A13F8F81-E684-40C6-8B02-6F2CFDF24F73}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A13F8F81-E684-40C6-8B02-6F2CFDF24F73}.Release|Any CPU.Build.0 = Release|Any CPU
+		{20C1F4F9-66F2-4791-87D7-576E8D51A98F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{20C1F4F9-66F2-4791-87D7-576E8D51A98F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{20C1F4F9-66F2-4791-87D7-576E8D51A98F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{20C1F4F9-66F2-4791-87D7-576E8D51A98F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{17EC646E-6B10-4101-910C-1D446B1576C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{17EC646E-6B10-4101-910C-1D446B1576C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{17EC646E-6B10-4101-910C-1D446B1576C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{17EC646E-6B10-4101-910C-1D446B1576C7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2D670E2C-71F2-460D-8278-4E1E4A8DBABF}
+	EndGlobalSection
+EndGlobal
