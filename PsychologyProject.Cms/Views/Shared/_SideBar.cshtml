@@ -1,0 +1,52 @@
+﻿<div class="vertical-menu">
+
+    <div data-simplebar class="h-100">
+
+        <div id="sidebar-menu">
+
+            <ul class="metismenu list-unstyled" id="side-menu">
+                <li class="menu-title" key="t-menu">Menu</li>
+
+                <li>
+                    @Html.ActionLink("Ana sayfa", "Index", "DashBoard")
+
+                </li>
+
+            </ul>
+            <hr>
+            <ul class="metismenu list-unstyled" id="side-menu">
+                <li class="menu-title" key="t-menu">Pages</li>
+
+                <li>
+                    <a href="javascript: void(0);" class="has-arrow waves-effect">
+                        <i class="bx bxs-user-detail"></i>
+                        <span key="t-contacts">Sayfalar</span>
+                    </a>
+                    <ul class="sub-menu" aria-expanded="false">
+                        <li>
+                            @Html.ActionLink("Anasayfa", "Index", "HomePage")
+                        </li>
+
+                    </ul>
+                    <ul class="sub-menu" aria-expanded="false">
+                        <li>@Html.ActionLink("Hakkımızda", "Index", "AboutUsPage") </li>
+
+                    </ul>
+                    <ul class="sub-menu" aria-expanded="false">
+                        <li>@Html.ActionLink("Hizmetlerimiz", "Index", "ServicesPage") </li>
+
+                    </ul>
+                    <ul class="sub-menu" aria-expanded="false">
+                        <li>@Html.ActionLink("iletişim", "Index", "ContactPage") </li>
+
+                    </ul>
+                    <ul class="sub-menu" aria-expanded="false">
+                        <li>@Html.ActionLink("Slider", "Index", "Slider") </li>
+
+                    </ul>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+</div>

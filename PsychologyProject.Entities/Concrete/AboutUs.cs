@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿
 
 namespace PsychologyProject.Entities.Concrete;
 
@@ -11,8 +7,6 @@ public class AboutUs
     public int Id { get; set; }
     public string Title { get; set; }
     public string Description { get; set; }
-    public string SubTitle { get; set; }
-    public string SubDescription { get; set; }
     public int HappyClient  { get; set; }
     public int YearInBusiness { get; set; }
     public int HighScore { get; set; }

@@ -9,11 +9,8 @@ namespace PsychologyProject.Entities.Concrete;
 public class Service
 {
     public int Id { get; set; }
-    public string Title { get; set; }
-    public string Description { get; set; }
-    public string ServicesIcon { get; set; }
-    public string ServicesTitle  { get; set; }
-    public string ServicesDescription { get; set; }
+    public string? Title { get; set; }
+    public string? Description { get; set; }
 
 
 }

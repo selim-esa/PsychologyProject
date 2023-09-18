@@ -1,0 +1,127 @@
+﻿@using PsychologyProject.Entities.Concrete;
+@model Contact
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Create New Project | Skote - Admin & Dashboard Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
+    <meta content="Themesbrand" name="author" />
+    <!-- App favicon -->
+    <link rel="shortcut icon" href="assets/images/favicon.ico">
+    <link href="assets/libs/bootstrap-datepicker/css/bootstrap-datepicker.min.css" rel="stylesheet">
+    <!-- dropzone css -->
+    <link href="assets/libs/dropzone/min/dropzone.min.css" rel="stylesheet" type="text/css" />
+    <!-- Bootstrap Css -->
+    <link href="assets/css/bootstrap.min.css" id="bootstrap-style" rel="stylesheet" type="text/css" />
+    <!-- Icons Css -->
+    <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+    <!-- App Css-->
+    <link href="assets/css/app.min.css" id="app-style" rel="stylesheet" type="text/css" />
+</head>
+<body data-sidebar="dark">
+    <div id="layout-wrapper">
+        <div class="main-content">
+            <div class="page-content">
+                <div class="container-fluid">
+                    <!-- start page title -->
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="page-title-box d-sm-flex align-items-center justify-content-between">
+                                <h4 class="mb-sm-0 font-size-18">Create New</h4>
+                                <div class="page-title-right">
+                                    <ol class="breadcrumb m-0">
+                                        <li class="breadcrumb-item"><a href="javascript: void(0);">Project</a></li>
+                                        <li class="breadcrumb-item active">Create New</li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h4 class="card-title mb-4">Create New Project</h4>
+                                    <form asp-action="Index" asp-controller="ContactPage" method="post">
+                                        <div class="row mb-4">
+                                            <label for="projectTitle" class="col-form-label col-lg-2">Title</label>
+                                            <div class="col-lg-10">
+                                                <input id="projectTitle" name="Title" type="text" class="form-control" placeholder="Enter Project Title..." >
+                                            </div>
+                                        </div>
+                                        <div class="row mb-4">
+                                            <label for="projectDescription" class="col-form-label col-lg-2" nam>Description</label>
+                                            <div class="col-lg-10">
+                                                <input id="projectDescription" name="Description" type="text" class="form-control" placeholder="Enter Project Description...">
+                                            </div>
+                                        </div>
+                                        <div class="row mb-4">
+                                            <label for="mapKey" class="col-form-label col-lg-2">Map Key</label>
+                                            <div class="col-lg-10">
+                                                <input id="mapKey" name="MapKey" type="text" class="form-control" placeholder="Enter Map Key...">
+                                            </div>
+                                        </div>
+                                        <div class="row mb-4">
+                                            <label for="businessHour" class="col-form-label col-lg-2">Business Hour</label>
+                                            <div class="col-lg-10">
+                                                <input id="businessHour" name="BusinessHour" type="text" class="form-control" placeholder="Enter Business Hour...">
+                                            </div>
+                                        </div>
+                                        <div class="row mb-4">
+                                            <label for="projectAddress" class="col-form-label col-lg-2">Address</label>
+                                            <div class="col-lg-10">
+                                                <input id="projectAddress" name="Address" type="text" class="form-control" placeholder="Enter Project Address...">
+                                            </div>
+                                        </div>
+                                        <div class="row mb-4">
+                                            <label for="projectPhone" class="col-form-label col-lg-2">Phone</label>
+                                            <div class="col-lg-10">
+                                                <input id="projectPhone" name="Phone" type="text" class="form-control" placeholder="Enter Project Phone...">
+                                            </div>
+                                        </div>
+                                        <div class="row mb-4">
+                                            <label for="projectEmail" class="col-form-label col-lg-2">Email</label>
+                                            <div class="col-lg-10">
+                                                <input id="projectEmail" name="EmailAddress" type="email" class="form-control" placeholder="Enter Project Email...">
+                                            </div>
+                                        </div>
+                                        <div class="row justify-content-end">
+                                            <div class="col-lg-10">
+                                                <button type="submit" class="btn btn-primary">Create Project</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <script>document.write(new Date().getFullYear())</script> © Skote.
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="text-sm-end d-none d-sm-block">
+                            Design & Develop by Themesbrand
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="assets/libs/jquery/jquery.min.js"></script>
+    <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/libs/metismenu/metisMenu.min.js"></script>
+    <script src="assets/libs/simplebar/simplebar.min.js"></script>
+    <script src="assets/libs/node-waves/waves.min.js"></script>
+    <script src="assets/libs/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
+    <script src="assets/libs/dropzone/min/dropzone.min.js"></script>
+    <script src="assets/js/app.js"></script>
+</body>
+</html>

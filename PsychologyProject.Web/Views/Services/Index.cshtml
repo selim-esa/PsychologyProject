@@ -1,0 +1,61 @@
+﻿@using PsychologyProject.Web.ViewModel;
+@model ServiceViewModel
+
+<body>
+	<div class="body">
+		<div role="main" class="main">
+			<div class="container pb-1">
+
+					<div class="row pt-4">
+						<div class="col">
+							<div class="overflow-hidden mb-3">
+								<h2 class="font-weight-bold text-8 mb-0 appear-animation" data-appear-animation="maskUp">
+									@Model.Service.Title
+								</h2>
+							</div>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-lg-10">
+							<div class="overflow-hidden">
+								<p class="lead mb-0 appear-animation" data-appear-animation="maskUp" data-appear-animation-delay="200">
+									@Model.Service.Description
+								</p>
+							</div>
+						</div>
+						<div class="col-lg-2 appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="500">
+							<a href="#" class="btn btn-modern btn-dark mt-1">Get a Quote!</a>
+						</div>
+					</div>
+
+				<div class="row">
+					<div class="col py-3">
+						<hr class="solid mt-5 mb-2">
+					</div>
+				</div>
+					<div class="row">
+						<div class="featured-boxes featured-boxes-style-2">
+					
+							<div class="row">
+							@foreach (var item in Model.serviceItem)
+								{
+									<div class="col-md-6 col-lg-4 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="700">
+									<div class="featured-box featured-box-effect-4">
+										<div class="box-content">
+											<i class="icon-featured icon-screen-tablet icons text-color-primary bg-color-grey"></i>
+											<h4 class="font-weight-bold">@item.ServicesTitle</h4>
+											<p class="px-3">@item.ServicesDescription</p>
+										</div>
+									</div>
+								</div>
+
+								}
+								</div>
+						</div>
+					</div>
+
+			</div>
+		</div>
+</body>
+</html>

@@ -11,8 +11,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PsychologyProject.Entities"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PsychologyProject.DataAccess", "PsychologyProject.DataAccess\PsychologyProject.DataAccess.csproj", "{A13F8F81-E684-40C6-8B02-6F2CFDF24F73}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PsychologyProject.Dto", "PsychologyProject.Dto\PsychologyProject.Dto.csproj", "{20C1F4F9-66F2-4791-87D7-576E8D51A98F}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PsychologyProject.Cms", "PsychologyProject.Cms\PsychologyProject.Cms.csproj", "{17EC646E-6B10-4101-910C-1D446B1576C7}"
 EndProject
 Global
@@ -37,10 +35,6 @@ Global
 		{A13F8F81-E684-40C6-8B02-6F2CFDF24F73}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A13F8F81-E684-40C6-8B02-6F2CFDF24F73}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A13F8F81-E684-40C6-8B02-6F2CFDF24F73}.Release|Any CPU.Build.0 = Release|Any CPU
-		{20C1F4F9-66F2-4791-87D7-576E8D51A98F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{20C1F4F9-66F2-4791-87D7-576E8D51A98F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{20C1F4F9-66F2-4791-87D7-576E8D51A98F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{20C1F4F9-66F2-4791-87D7-576E8D51A98F}.Release|Any CPU.Build.0 = Release|Any CPU
 		{17EC646E-6B10-4101-910C-1D446B1576C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{17EC646E-6B10-4101-910C-1D446B1576C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{17EC646E-6B10-4101-910C-1D446B1576C7}.Release|Any CPU.ActiveCfg = Release|Any CPU

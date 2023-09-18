@@ -367,7 +367,6 @@
   <ItemGroup>
     <ProjectReference Include="..\PsychologyProject.Business\PsychologyProject.Business.csproj" />
     <ProjectReference Include="..\PsychologyProject.DataAccess\PsychologyProject.DataAccess.csproj" />
-    <ProjectReference Include="..\PsychologyProject.Dto\PsychologyProject.Dto.csproj" />
     <ProjectReference Include="..\PsychologyProject.Entities\PsychologyProject.Entities.csproj" />
   </ItemGroup>
 

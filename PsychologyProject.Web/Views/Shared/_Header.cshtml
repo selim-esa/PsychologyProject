@@ -23,22 +23,7 @@
 								<div class="header-column justify-content-end">
 									<div class="header-row">
 										<nav class="header-nav-top">
-											<ul class="nav nav-pills">
-												<li class="nav-item nav-item-borders py-2 d-none d-lg-inline-flex">
-													<a href="#">Blog</a>
-												</li>
-												<li class="nav-item nav-item-borders py-2 pr-0 dropdown">
-													<a class="nav-link" href="#" role="button" id="dropdownLanguage" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-														<img src="img/blank.gif" class="flag flag-us" alt="English" /> English
-														<i class="fas fa-angle-down"></i>
-													</a>
-													<div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownLanguage">
-														<a class="dropdown-item" href="#"><img src="img/blank.gif" class="flag flag-us" alt="English" /> English</a>
-														<a class="dropdown-item" href="#"><img src="img/blank.gif" class="flag flag-es" alt="English" /> Español</a>
-														<a class="dropdown-item" href="#"><img src="img/blank.gif" class="flag flag-fr" alt="English" /> Française</a>
-													</div>
-												</li>
-											</ul>
+										
 										</nav>
 									</div>
 								</div>
@@ -50,8 +35,8 @@
 							<div class="header-column">
 								<div class="header-row">
 									<div class="header-logo">
-										<a href="index.html">
-											<img alt="Porto" width="100" height="48" data-sticky-width="82" data-sticky-height="40" src="img/logo-corporate-5.png">
+							<a href="/Home/Index">
+											<img alt="Porto" width="100" height="48" data-sticky-width="82" data-sticky-height="40" src="~/img/logo-corporate-5.png">
 										</a>
 									</div>
 								</div>
@@ -63,23 +48,23 @@
 											<nav class="collapse">
 												<ul class="nav nav-pills" id="mainNav">
 													<li class="">
-														<a class="" href="index.html">
-															Home
+														<a class="" href="">
+												@Html.ActionLink("Anasayfa", "Index","Home")
 														</a>
 													</li>
 													<li class="">
-														<a class="" href="index.html">
-															Hakkımızda
+														<a class="" href="">
+												@Html.ActionLink("Hakkımızda", "Index","AboutUs")
 														</a>
 													</li>
 													<li class="">
-														<a class="" href="index.html">
-															Hizmetlerimiz
+														<a class="" href="">
+												@Html.ActionLink("Hizmetlerimiz", "Index","Services")
 														</a>
 													</li>
 													<li class="">
-														<a class="" href="index.html">
-															iletişim
+														<a class="" href="">
+												@Html.ActionLink("İletişim", "Index","Contact")
 														</a>
 													</li>
 												</ul>
@@ -91,52 +76,9 @@
 									</div>
 									<div class="header-nav-features header-nav-features-no-border header-nav-features-lg-show-border order-1 order-lg-2">
 										<div class="header-nav-feature header-nav-features-search d-inline-flex">
-											<a href="#" class="header-nav-features-toggle" data-focus="headerSearch"><i class="fas fa-search header-nav-top-icon"></i></a>
-											<div class="header-nav-features-dropdown" id="headerTopSearchDropdown">
-												<form role="search" action="page-search-results.html" method="get">
-													<div class="simple-search input-group">
-														<input class="form-control text-1" id="headerSearch" name="q" type="search" value="" placeholder="Search...">
-														<span class="input-group-append">
-															<button class="btn" type="submit">
-																<i class="fa fa-search header-nav-top-icon"></i>
-															</button>
-														</span>
-													</div>
-												</form>
-											</div>
+											
 										</div>
-										<div class="header-nav-feature header-nav-features-cart d-inline-flex ml-2">
-											<a href="#" class="header-nav-features-toggle">
-												<img src="img/icons/icon-cart.svg" width="14" alt="" class="header-nav-top-icon-img">
-												<span class="cart-info">
-													<span class="cart-qty">1</span>
-												</span>
-											</a>
-											<div class="header-nav-features-dropdown" id="headerTopCartDropdown">
-												<ol class="mini-products-list">
-													<li class="item">
-														<a href="#" title="Camera X1000" class="product-image"><img src="img/products/product-1.jpg" alt="Camera X1000"></a>
-														<div class="product-details">
-															<p class="product-name">
-																<a href="#">Camera X1000 </a>
-															</p>
-															<p class="qty-price">
-																 1X <span class="price">$890</span>
-															</p>
-															<a href="#" title="Remove This Item" class="btn-remove"><i class="fas fa-times"></i></a>
-														</div>
-													</li>
-												</ol>
-												<div class="totals">
-													<span class="label">Total:</span>
-													<span class="price-total"><span class="price">$890</span></span>
-												</div>
-												<div class="actions">
-													<a class="btn btn-dark" href="#">View Cart</a>
-													<a class="btn btn-primary" href="#">Checkout</a>
-												</div>
-											</div>
-										</div>
+									
 									</div>
 								</div>
 							</div>

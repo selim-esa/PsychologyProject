@@ -1,19 +1,132 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-  
-    <title>@ViewData["Title"] - PsychologyProject.Web</title>
-  
-</head>
-<body>
-        @await Html.PartialAsync("_Header")
+    <!-- Basic -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Porto - Responsive HTML5 Template</title>
+    <meta name="keywords" content="HTML5 Template" />
+    <meta name="description" content="Porto - Responsive HTML5 Template">
+    <meta name="author" content="okler.net">
 
-    <div >
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
+
+    <!-- Web Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800%7CShadows+Into+Light%7CPlayfair+Display:400&display=swap" rel="stylesheet" type="text/css">
+
+    <!-- Vendor CSS -->
+    <link rel="stylesheet" href="~/vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="~/vendor/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="~/vendor/animate/animate.compat.css">
+    <link rel="stylesheet" href="~/vendor/simple-line-icons/css/simple-line-icons.min.css">
+    <link rel="stylesheet" href="~/vendor/owl.carousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="~/vendor/owl.carousel/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="~/vendor/magnific-popup/magnific-popup.min.css">
+
+    <!-- Theme CSS -->
+    <link rel="stylesheet" href="~/css/theme.css">
+    <link rel="stylesheet" href="~/css/theme-elements.css">
+    <link rel="stylesheet" href="~/css/theme-blog.css">
+    <link rel="stylesheet" href="~/css/theme-shop.css">
+
+    <!-- Current Page CSS -->
+    <link rel="stylesheet" href="~/vendor/rs-plugin/css/settings.css">
+    <link rel="stylesheet" href="~/vendor/rs-plugin/css/layers.css">
+    <link rel="stylesheet" href="~/vendor/rs-plugin/css/navigation.css">
+
+    <!-- Demo CSS -->
+    <!-- Skin CSS -->
+    <link rel="stylesheet" href="~/css/skins/skin-corporate-5.css">
+
+    <!-- Theme Custom CSS -->
+    <link rel="stylesheet" href="~/css/custom.css">
+
+    <!-- Head Libs -->
+    <script src="~/vendor/modernizr/modernizr.min.js"></script>
+</head>
+
+<body>
+    @await Html.PartialAsync("_Header")
+    <div>
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
     </div>
-        @await Html.PartialAsync("_Footer")
+    @await Html.PartialAsync("_Footer")
+
     @await RenderSectionAsync("Scripts", required: false)
+    <script src="~/vendor/jquery/jquery.min.js"></script>
+    <script src="~/vendor/jquery.appear/jquery.appear.min.js"></script>
+    <script src="~/vendor/jquery.easing/jquery.easing.min.js"></script>
+    <script src="~/vendor/jquery.cookie/jquery.cookie.min.js"></script>
+    <script src="~/vendor/popper/umd/popper.min.js"></script>
+    <script src="~/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="~/vendor/common/common.min.js"></script>
+    <script src="~/vendor/jquery.validation/jquery.validate.min.js"></script>
+    <script src="~/vendor/jquery.easy-pie-chart/jquery.easypiechart.min.js"></script>
+    <script src="~/vendor/jquery.gmap/jquery.gmap.min.js"></script>
+    <script src="~/vendor/jquery.lazyload/jquery.lazyload.min.js"></script>
+    <script src="~/vendor/isotope/jquery.isotope.min.js"></script>
+    <script src="~/vendor/owl.carousel/owl.carousel.min.js"></script>
+    <script src="~/vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+    <script src="~/vendor/vide/jquery.vide.min.js"></script>
+    <script src="~/vendor/vivus/vivus.min.js"></script>
+    <script src="~/js/theme.js"></script>
+    <script src="~/vendor/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
+    <script src="~/vendor/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+    <script src="~/js/custom.js"></script>
+    <script src="~/js/theme.init.js"></script>
+    <!-- Vendor -->
+    <script src="~/https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY"></script>
+    <script>
+        /*
+        Map Settings
+        Find the Latitude and Longitude of your address:
+        - https://www.latlong.net/
+        - http://www.findlatitudeandlongitude.com/find-address-from-latitude-and-longitude/
+        */
+        // Map Markers
+        var mapMarkers = [{
+            address: "New York, NY 10017",
+            html: "<strong>New York Office</strong><br>New York, NY 10017",
+            icon: {
+                image: "img/pin.png",
+                iconsize: [26, 46],
+                iconanchor: [12, 46]
+            },
+            popup: true
+        }];
+        // Map Initial Location
+        var initLatitude = 40.75198;
+        var initLongitude = -73.96978;
+        // Map Extended Settings
+        var mapSettings = {
+            controls: {
+                draggable: (($.browser.mobile) ? false : true),
+                panControl: true,
+                zoomControl: true,
+                mapTypeControl: true,
+                scaleControl: true,
+                streetViewControl: true,
+                overviewMapControl: true
+            },
+            scrollwheel: false,
+            markers: mapMarkers,
+            latitude: initLatitude,
+            longitude: initLongitude,
+            zoom: 11
+        };
+        var map = $('#googlemaps').gMap(mapSettings);
+        // Map text-center At
+        var mapCenterAt = function (options, e) {
+            e.preventDefault();
+            $('#googlemaps').gMap("centerAt", options);
+        }
+    </script>
 </body>
 </html>

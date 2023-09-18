@@ -1,0 +1,116 @@
+﻿@model HomePageViewModel
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8" />
+    <title>Create New Project | Skote - Admin & Dashboard Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
+    <meta content="Themesbrand" name="author" />
+    <link rel="shortcut icon" href="assets/images/favicon.ico">
+    <link href="assets/libs/bootstrap-datepicker/css/bootstrap-datepicker.min.css" rel="stylesheet">
+    <link href="assets/libs/dropzone/min/dropzone.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/bootstrap.min.css" id="bootstrap-style" rel="stylesheet" type="text/css" />
+    <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/app.min.css" id="app-style" rel="stylesheet" type="text/css" />
+
+</head>
+<body data-sidebar="dark">
+
+    <div id="layout-wrapper">
+
+
+        <div class="main-content">
+
+            <div class="page-content">
+                <div class="container-fluid">
+
+                    <!-- start page title -->
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="page-title-box d-sm-flex align-items-center justify-content-between">
+                                <h4 class="mb-sm-0 font-size-18">Create New</h4>
+
+                                <div class="page-title-right">
+                                    <ol class="breadcrumb m-0">
+                                        <li class="breadcrumb-item"><a href="javascript: void(0);">Project</a></li>
+                                        <li class="breadcrumb-item active">Create New</li>
+                                    </ol>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h4 class="card-title mb-4">Create New Project</h4>
+                                    <form asp-action="Index" asp-controller="HomePage" method="post">
+                                        <div class="row mb-4">
+                                            <label for="projectname" class="col-form-label col-lg-2">BriefTitle</label>
+                                            <div class="col-lg-10">
+                                                <input id="projectname" name="BriefTitle" type="text" class="form-control" placeholder="Enter Project Name...">
+                                            </div>
+                                        </div>
+                                        <div class="row mb-4">
+                                            <label for="projectname" class="col-form-label col-lg-2">BriefDescription</label>
+                                            <div class="col-lg-10">
+                                                <input id="projectname" name="BriefDescription" type="text" class="form-control" placeholder="Enter Project Name...">
+                                            </div>
+                                        </div>
+                                        <div class="row mb-4">
+                                            <label for="projectname" class="col-form-label col-lg-2">BriefIcon</label>
+                                            <div class="col-lg-10">
+                                                <input id="projectname" name="BriefIcon" type="text" class="form-control" placeholder="Enter Project Name...">
+                                            </div>
+                                        </div>                           
+                                        <div aria-label="Basic example">
+                                            <button type="submit" class="btn btn-primary">create</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <footer class="footer">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <script>document.write(new Date().getFullYear())</script> © Skote.
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="text-sm-end d-none d-sm-block">
+                                Design & Develop by Themesbrand
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+
+    </div>
+
+    <div class="rightbar-overlay"></div>
+
+    <!-- JAVASCRIPT -->
+    <script src="assets/libs/jquery/jquery.min.js"></script>
+    <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/libs/metismenu/metisMenu.min.js"></script>
+    <script src="assets/libs/simplebar/simplebar.min.js"></script>
+    <script src="assets/libs/node-waves/waves.min.js"></script>
+
+
+    <script src="assets/libs/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
+
+    <script src="assets/libs/dropzone/min/dropzone.min.js"></script>
+
+    <script src="assets/js/app.js"></script>
+
+</body>
+</html>

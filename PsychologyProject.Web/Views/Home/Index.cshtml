@@ -1,59 +1,8 @@
-﻿@using PsychologyProject.Entities.Concrete;
-@model List<Home>
+﻿@using PsychologyProject.Web.ViewModel;
+@model HomeViewModel
 <!DOCTYPE html>
 <html>
-<head>
 
-    <!-- Basic -->
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-    <title>Porto - Responsive HTML5 Template</title>
-
-    <meta name="keywords" content="HTML5 Template" />
-    <meta name="description" content="Porto - Responsive HTML5 Template">
-    <meta name="author" content="okler.net">
-    <!-- Favicon -->
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
-    <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
-
-    <!-- Mobile Metas -->
-    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
-
-    <!-- Web Fonts  -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800%7CShadows+Into+Light%7CPlayfair+Display:400&display=swap" rel="stylesheet" type="text/css">
-
-    <!-- Vendor CSS -->
-    <link rel="stylesheet" href="~/vendor/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="~/vendor/fontawesome-free/css/all.min.css">
-    <link rel="stylesheet" href="~/vendor/animate/animate.compat.css">
-    <link rel="stylesheet" href="~/vendor/simple-line-icons/css/simple-line-icons.min.css">
-    <link rel="stylesheet" href="~/vendor/owl.carousel/assets/owl.carousel.min.css">
-    <link rel="stylesheet" href="~/vendor/owl.carousel/assets/owl.theme.default.min.css">
-    <link rel="stylesheet" href="~/vendor/magnific-popup/magnific-popup.min.css">
-
-    <!-- Theme CSS -->
-    <link rel="stylesheet" href="~/css/theme-elements.css">
-    <link rel="stylesheet" href="~/css/theme-blog.css">
-    <link rel="stylesheet" href="~/css/theme.css">
-    <link rel="stylesheet" href="~/css/theme-shop.css">
-
-    <!-- Current Page CSS -->
-    <link rel="stylesheet" href="~/vendor/rs-plugin/css/settings.css">
-    <link rel="stylesheet" href="~/vendor/rs-plugin/css/layers.css">
-    <link rel="stylesheet" href="~/vendor/rs-plugin/css/navigation.css">
-
-    <!-- Demo CSS -->
-    <!-- Skin CSS -->
-    <link rel="stylesheet" href="~/css/skins/skin-corporate-5.css">
-
-    <!-- Theme Custom CSS -->
-    <link rel="stylesheet" href="~/css/custom.css">
-
-    <!-- Head Libs -->
-    <script src="~/vendor/modernizr/modernizr.min.js"></script>
-
-</head>
 <body class="loading-overlay-showing" data-plugin-page-transition data-loading-overlay data-plugin-options="{'hideDelay': 500}">
     <div class="loading-overlay">
         <div class="bounce-loader">
@@ -62,14 +11,14 @@
             <div class="bounce3"></div>
         </div>
     </div>
+
     <div class="body">
-      
         <div role="main" class="main">
             <div class="slider-container rev_slider_wrapper" style="height: 700px;">
                 <div id="revolutionSlider" class="slider rev_slider" data-version="5.4.8" data-plugin-revolution-slider data-plugin-options="{'delay': 9000, 'gridwidth': 1170, 'gridheight': 700, 'responsiveLevels': [4096,1200,992,500], 'navigation' : {'arrows': { 'enable': false }, 'bullets': {'enable': true, 'style': 'bullets-style-1', 'h_align': 'center', 'v_align': 'bottom', 'space': 7, 'v_offset': 70, 'h_offset': 0}}}">
-                    <ul>
+                    <ul id="mainSlider">
                         <li data-transition="fade" class="slide-overlay slide-overlay-level-8">
-                            <img src="img/slides/slide-corporate-5-1.jpg"
+                            <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fsmartslider3.com%2Fblog%2Fslider-images%2F&psig=AOvVaw32atBpadOFQdlsqjgYBg7-&ust=1694852249912000&source=images&cd=vfe&opi=89978449&ved=0CBAQjRxqFwoTCLDth-OWrIEDFQAAAAAdAAAAABAE"
                                  alt=""
                                  data-bgposition="center center"
                                  data-bgfit="cover"
@@ -82,7 +31,7 @@
                                  data-start="1000"
                                  data-transform_in="x:[-300%];opacity:0;s:500;"
                                  data-transform_idle="opacity:0.2;s:500;">
-                                <img src="img/slides/slide-title-border.png" alt="">
+                                <img src="~/img/slides/slide-title-border.png" alt="">
                             </div>
 
                             <div class="tp-caption text-color-light font-weight-normal"
@@ -101,7 +50,7 @@
                                  data-start="1000"
                                  data-transform_in="x:[300%];opacity:0;s:500;"
                                  data-transform_idle="opacity:0.2;s:500;">
-                                <img src="img/slides/slide-title-border.png" alt="">
+                                <img src="~/img/slides/slide-title-border.png" alt="">
                             </div>
 
                             <div class="tp-caption font-weight-extra-bold text-color-light negative-ls-2"
@@ -138,117 +87,43 @@
                                data-paddingleft="['45','45','45','110']">GET STARTED NOW!</a>
 
                         </li>
-                        <li class="slide-overlay" data-transition="fade">
-                            <img src="img/slides/slide-corporate-1-2.jpg"
-                                 alt=""
-                                 data-bgposition="center center"
-                                 data-bgfit="cover"
-                                 data-bgrepeat="no-repeat"
-                                 class="rev-slidebg">
 
-                            <h1 class="tp-caption font-weight-extra-bold text-color-light negative-ls-2"
-                                data-frames='[{"delay":1000,"speed":2000,"frame":"0","from":"sX:1.5;opacity:0;fb:20px;","to":"o:1;fb:0;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]'
-                                data-x="center"
-                                data-y="center" data-voffset="['-55','-55','-55','-55']"
-                                data-fontsize="['50','50','50','90']"
-                                data-lineheight="['55','55','55','95']"
-                                data-letterspacing="-1">
-                                AWESOME DESIGNS
-                            </h1>
-
-                            <div class="tp-caption font-weight-light text-center"
-                                 data-frames='[{"from":"opacity:0;","speed":300,"to":"o:1;","delay":2000,"split":"chars","splitdelay":0.05,"ease":"Power2.easeInOut"},{"delay":"wait","speed":1000,"to":"y:[100%];","mask":"x:inherit;y:inherit;s:inherit;e:inherit;","ease":"Power2.easeInOut"}]'
-                                 data-x="center"
-                                 data-y="center" data-voffset="['-5','-5','-5','15']"
-                                 data-fontsize="['18','18','18','35']"
-                                 data-lineheight="['20','20','20','40']"
-                                 style="color: #b5b5b5;">
-                                Porto is a huge success in the of one of the world’s largest MarketPlace.
-                            </div>
-
-                            <a class="tp-caption btn btn-light-2 btn-outline font-weight-semibold"
-                               data-frames='[{"delay":2500,"speed":2000,"frame":"0","from":"opacity:0;y:50%;","to":"o:1;y:0;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]'
-                               data-hash
-                               data-hash-offset="85"
-                               href="#main"
-                               data-x="center" data-hoffset="0"
-                               data-y="center" data-voffset="['65','65','65','105']"
-                               data-whitespace="nowrap"
-                               data-fontsize="['15','15','15','33']"
-                               data-paddingtop="['15','15','15','40']"
-                               data-paddingright="['45','45','45','110']"
-                               data-paddingbottom="['15','15','15','40']"
-                               data-paddingleft="['45','45','45','110']">GET STARTED NOW!</a>
-
-                        </li>
                     </ul>
                 </div>
             </div>
+           
 
             <div class="container">
                 <div class="row py-5 my-5">
                     <div class="col-lg-4 appear-animation" data-appear-animation="fadeInRightShorter">
                         <h2 class="font-weight-normal text-6 line-heigh-2 mb-4"><strong class="font-weight-extra-bold">Who</strong> We Are</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit massa enim. Nullam id valorem ipsum dolor sit amet, consectetur adipiscinLorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        <p>Phasellus blandit massa enim. Nullam id varius elit. blandit massa enimariusius.</p>
+                        <p></p>
                         <a href="#" class="learn-more text-color-primary font-weight-semibold text-2">VIEW MORE<i class="pl-2 fas fa-chevron-right text-2"></i></a>
                     </div>
+
                     <div class="col-lg-8 mt-5 mt-lg-0">
                         <div class="row">
-                            <div class="col-lg-6 mb-4 mb-lg-5 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="200">
-                                <div class="feature-box feature-box-style-2">
-                                    <div class="feature-box-icon">
-                                        <i class="icon-user-following icons"></i>
-                                    </div>
-                                    <div class="feature-box-info">
-                                        <h4 class="font-weight-bold mb-2">Customer Support</h4>
-                                        <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing metus elit. Quisque rutrum pellentesque imperdiet.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-6 mb-4 mb-lg-5 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="400">
-                                <div class="feature-box feature-box-style-2">
-                                    <div class="feature-box-icon">
-                                        <i class="icon-layers icons"></i>
-                                    </div>
-                                    <div class="feature-box-info">
-                                        <h4 class="font-weight-bold mb-2">Sliders</h4>
-                                        <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque rutrum pellentesque imperdiet. Nulla lacinia iaculis nulla.</p>
+                            @foreach (var item in Model.Brief)
+                            {
+                                <div class="col-lg-6 mb-4 mb-lg-5 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="200">
+                                    <div class="feature-box feature-box-style-2">
+                                        <div class="feature-box-icon">
+                                            <i class="icon-user-following icons"></i>
+                                        </div>
+                                        <div class="feature-box-info">
+                                            <h4 class="font-weight-bold mb-2">@item.Name</h4>
+                                            <p class="mb-0">@item.Description</p>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
+                            }
                         </div>
 
-                        <div class="row">
-                            <div class="col-lg-6 mb-4 mb-lg-0">
-                                <div class="feature-box feature-box-style-2 appear-animation" data-appear-animation="fadeInLeftShorter" data-appear-animation-delay="800">
-                                    <div class="feature-box-icon">
-                                        <i class="icon-star icons"></i>
-                                    </div>
-                                    <div class="feature-box-info">
-                                        <h4 class="font-weight-bold mb-2">Icons</h4>
-                                        <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing metus elit. Quisque rutrum pellentesque imperdiet.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="feature-box feature-box-style-2 appear-animation" data-appear-animation="fadeInLeftShorter" data-appear-animation-delay="600">
-                                    <div class="feature-box-icon">
-                                        <i class="icon-drop icons"></i>
-                                    </div>
-                                    <div class="feature-box-info">
-                                        <h4 class="font-weight-bold mb-2">Colors</h4>
-                                        <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque rutrum pellentesque imperdiet. Nulla lacinia iaculis nulla.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+
                     </div>
                 </div>
             </div>
-
-            <hr>
-
+            <hr />
             <section class="section bg-color-light border-0 pb-0 m-0">
                 <div class="container">
                     <div class="row">
@@ -257,98 +132,11 @@
                         </div>
                     </div>
                 </div>
-                <div class="image-gallery sort-destination full-width mb-0">
-                    <div class="isotope-item">
-                        <div class="image-gallery-item mb-0 appear-animation" data-appear-animation="fadeInLeftShorter" data-appear-animation-delay="700">
-                            <a href="portfolio-single-wide-slider.html">
-                                <span class="thumb-info thumb-info-centered-info thumb-info-no-borders">
-                                    <span class="thumb-info-wrapper">
-                                        <img src="img/projects/project-30.jpg" class="img-fluid" alt="">
-                                        <span class="thumb-info-title">
-                                            <span class="thumb-info-inner">Project Title</span>
-                                            <span class="thumb-info-type">Project Type</span>
-                                        </span>
-                                        <span class="thumb-info-action">
-                                            <span class="thumb-info-action-icon"><i class="fas fa-plus"></i></span>
-                                        </span>
-                                    </span>
-                                </span>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="isotope-item">
-                        <div class="image-gallery-item mb-0 appear-animation" data-appear-animation="fadeInLeftShorter" data-appear-animation-delay="500">
-                            <a href="portfolio-single-wide-slider.html">
-                                <span class="thumb-info thumb-info-centered-info thumb-info-no-borders">
-                                    <span class="thumb-info-wrapper">
-                                        <img src="img/projects/project-31.jpg" class="img-fluid" alt="">
-                                        <span class="thumb-info-title">
-                                            <span class="thumb-info-inner">Project Title</span>
-                                            <span class="thumb-info-type">Project Type</span>
-                                        </span>
-                                        <span class="thumb-info-action">
-                                            <span class="thumb-info-action-icon"><i class="fas fa-plus"></i></span>
-                                        </span>
-                                    </span>
-                                </span>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="isotope-item">
-                        <div class="image-gallery-item mb-0 appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="300">
-                            <a href="portfolio-single-wide-slider.html">
-                                <span class="thumb-info thumb-info-centered-info thumb-info-no-borders">
-                                    <span class="thumb-info-wrapper">
-                                        <img src="img/projects/project-32.jpg" class="img-fluid" alt="">
-                                        <span class="thumb-info-title">
-                                            <span class="thumb-info-inner">Project Title</span>
-                                            <span class="thumb-info-type">Project Type</span>
-                                        </span>
-                                        <span class="thumb-info-action">
-                                            <span class="thumb-info-action-icon"><i class="fas fa-plus"></i></span>
-                                        </span>
-                                    </span>
-                                </span>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="isotope-item">
-                        <div class="image-gallery-item mb-0 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="500">
-                            <a href="portfolio-single-wide-slider.html">
-                                <span class="thumb-info thumb-info-centered-info thumb-info-no-borders">
-                                    <span class="thumb-info-wrapper">
-                                        <img src="img/projects/project-33.jpg" class="img-fluid" alt="">
-                                        <span class="thumb-info-title">
-                                            <span class="thumb-info-inner">Project Title</span>
-                                            <span class="thumb-info-type">Project Type</span>
-                                        </span>
-                                        <span class="thumb-info-action">
-                                            <span class="thumb-info-action-icon"><i class="fas fa-plus"></i></span>
-                                        </span>
-                                    </span>
-                                </span>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="isotope-item">
-                        <div class="image-gallery-item mb-0 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="700">
-                            <a href="portfolio-single-wide-slider.html">
-                                <span class="thumb-info thumb-info-centered-info thumb-info-no-borders">
-                                    <span class="thumb-info-wrapper">
-                                        <img src="img/projects/project-34.jpg" class="img-fluid" alt="">
-                                        <span class="thumb-info-title">
-                                            <span class="thumb-info-inner">Project Title</span>
-                                            <span class="thumb-info-type">Project Type</span>
-                                        </span>
-                                        <span class="thumb-info-action">
-                                            <span class="thumb-info-action-icon"><i class="fas fa-plus"></i></span>
-                                        </span>
-                                    </span>
-                                </span>
-                            </a>
-                        </div>
-                    </div>
+                <div class="image-gallery sort-destination full-width mb-0" id="altSlider">
+                    
                 </div>
+
+                
             </section>
 
             <div class="container">
@@ -386,119 +174,94 @@
                 </div>
             </div>
 
-
-
-            <div class="container">
-                <div class="row pt-5 mt-4">
-                    <div class="col">
-                        <h2 class="font-weight-normal text-6 mb-4"><strong class="font-weight-extra-bold">Latest</strong> Posts</h2>
-                    </div>
-                </div>
-                <div class="row recent-posts pb-5 mb-4">
-                    <div class="col-md-6 col-lg-3 mb-4 mb-lg-0">
-                        <article>
-                            <div class="row">
-                                <div class="col-auto pr-0">
-                                    <div class="date">
-                                        <span class="day text-color-dark font-weight-extra-bold">15</span>
-                                        <span class="month text-1">JAN</span>
-                                    </div>
-                                </div>
-                                <div class="col pl-1">
-                                    <h4 class="line-height-3 text-4"><a href="blog-post.html" class="text-dark">Lorem ipsum dolor sit amet, consectetur</a></h4>
-                                    <p class="line-height-5 pr-4 mb-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                                    <a href="/" class="read-more text-color-dark font-weight-bold text-2">read more <i class="fas fa-chevron-right text-1 ml-1"></i></a>
-                                </div>
-                            </div>
-                        </article>
-                    </div>
-                    <div class="col-md-6 col-lg-3 mb-4 mb-lg-0">
-                        <article>
-                            <div class="row">
-                                <div class="col-auto pr-0">
-                                    <div class="date">
-                                        <span class="day text-color-dark font-weight-extra-bold">14</span>
-                                        <span class="month text-1">JAN</span>
-                                    </div>
-                                </div>
-                                <div class="col pl-1">
-                                    <h4 class="line-height-3 text-4"><a href="blog-post.html" class="text-dark">Lorem ipsum dolor sit amet, consectetur</a></h4>
-                                    <p class="line-height-5 pr-4 mb-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                                    <a href="/" class="read-more text-color-dark font-weight-bold text-2">read more <i class="fas fa-chevron-right text-1 ml-1"></i></a>
-                                </div>
-                            </div>
-                        </article>
-                    </div>
-                    <div class="col-md-6 col-lg-3 mb-4 mb-md-0">
-                        <article>
-                            <div class="row">
-                                <div class="col-auto pr-0">
-                                    <div class="date">
-                                        <span class="day text-color-dark font-weight-extra-bold">13</span>
-                                        <span class="month text-1">JAN</span>
-                                    </div>
-                                </div>
-                                <div class="col pl-1">
-                                    <h4 class="line-height-3 text-4"><a href="blog-post.html" class="text-dark">Lorem ipsum dolor sit amet, consectetur</a></h4>
-                                    <p class="line-height-5 pr-4 mb-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                                    <a href="/" class="read-more text-color-dark font-weight-bold text-2">read more <i class="fas fa-chevron-right text-1 ml-1"></i></a>
-                                </div>
-                            </div>
-                        </article>
-                    </div>
-                    <div class="col-md-6 col-lg-3">
-                        <article>
-                            <div class="row">
-                                <div class="col-auto pr-0">
-                                    <div class="date">
-                                        <span class="day text-color-dark font-weight-extra-bold">12</span>
-                                        <span class="month text-1">JAN</span>
-                                    </div>
-                                </div>
-                                <div class="col pl-1">
-                                    <h4 class="line-height-3 text-4"><a href="blog-post.html" class="text-dark">Lorem ipsum dolor sit amet, consectetur</a></h4>
-                                    <p class="line-height-5 pr-4 mb-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                                    <a href="/" class="read-more text-color-dark font-weight-bold text-2">read more <i class="fas fa-chevron-right text-1 ml-1"></i></a>
-                                </div>
-                            </div>
-                        </article>
-                    </div>
-                </div>
-            </div>
-
         </div>
 
     </div>
-    <script src="~/vendor/jquery/jquery.min.js"></script>
-    <script src="~/vendor/jquery.appear/jquery.appear.min.js"></script>
-    <script src="~/vendor/jquery.easing/jquery.easing.min.js"></script>
-    <script src="~/vendor/jquery.cookie/jquery.cookie.min.js"></script>
-    <script src="~/vendor/popper/umd/popper.min.js"></script>
-    <script src="~/vendor/bootstrap/js/bootstrap.min.js"></script>
-    <script src="~/vendor/common/common.min.js"></script>
-    <script src="~/vendor/jquery.validation/jquery.validate.min.js"></script>
-    <script src="~/vendor/jquery.easy-pie-chart/jquery.easypiechart.min.js"></script>
-    <script src="~/vendor/jquery.gmap/jquery.gmap.min.js"></script>
-    <script src="~/vendor/jquery.lazyload/jquery.lazyload.min.js"></script>
-    <script src="~/vendor/isotope/jquery.isotope.min.js"></script>
-    <script src="~/vendor/owl.carousel/owl.carousel.min.js"></script>
-    <script src="~/vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
-    <script src="~/vendor/vide/jquery.vide.min.js"></script>
-    <script src="~/vendor/vivus/vivus.min.js"></script>
 
-
-    <script src="~/js/theme.js"></script>
-
-    <script src="~/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
-    <script src="~/vendor/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
-
-
-    <script src="~~/js/custom.js"></script>
-
-
-
-    <script src="~/js/theme.init.js"></script>
 
 
 </body>
 </html>
+
+
+<script>
+    debugger
+    const list = @Model.Sliders.ToList();
+    console.log(list);
+                    // for (let s of list)
+                    //     const text = `
+                    //                     <li class="slide-overlay" data-transition="fade">
+                    //                                                             <img src="img/slides/${s.ImageUrl}"
+                    //                                                  alt=""
+                    //                                                  data-bgposition="center center"
+                    //                                                  data-bgfit="cover"
+                    //                                                  data-bgrepeat="no-repeat"
+                    //                                                  class="rev-slidebg">
+
+                    //                                             <h1 class="tp-caption font-weight-extra-bold text-color-light negative-ls-2"
+                    //                                                 data-frames='[{"delay":1000,"speed":2000,"frame":"0","from":"sX:1.5;opacity:0;fb:20px;","to":"o:1;fb:0;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]'
+                    //                                                 data-x="center"
+                    //                                                 data-y="center" data-voffset="['-55','-55','-55','-55']"
+                    //                                                 data-fontsize="['50','50','50','90']"
+                    //                                                 data-lineheight="['55','55','55','95']"
+                    //                                                 data-letterspacing="-1">
+                    //                                                 AWESOME DESIGNS
+                    //                                             </h1>
+
+                    //                                             <div class="tp-caption font-weight-light text-center"
+                    //                                                  data-frames='[{"from":"opacity:0;","speed":300,"to":"o:1;","delay":2000,"split":"chars","splitdelay":0.05,"ease":"Power2.easeInOut"},{"delay":"wait","speed":1000,"to":"y:[100%];","mask":"x:inherit;y:inherit;s:inherit;e:inherit;","ease":"Power2.easeInOut"}]'
+                    //                                                  data-x="center"
+                    //                                                  data-y="center" data-voffset="['-5','-5','-5','15']"
+                    //                                                  data-fontsize="['18','18','18','35']"
+                    //                                                  data-lineheight="['20','20','20','40']"
+                    //                                                  style="color: #b5b5b5;">
+                    //                                                 Porto is a huge success in the of one of the world’s largest MarketPlace.
+                    //                                             </div>
+
+                    //                                             <a class="tp-caption btn btn-light-2 btn-outline font-weight-semibold"
+                    //                                                data-frames='[{"delay":2500,"speed":2000,"frame":"0","from":"opacity:0;y:50%;","to":"o:1;y:0;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]'
+                    //                                                data-hash
+                    //                                                data-hash-offset="85"
+                    //                                                href="#main"
+                    //                                                data-x="center" data-hoffset="0"
+                    //                                                data-y="center" data-voffset="['65','65','65','105']"
+                    //                                                data-whitespace="nowrap"
+                    //                                                data-fontsize="['15','15','15','33']"
+                    //                                                data-paddingtop="['15','15','15','40']"
+                    //                                                data-paddingright="['45','45','45','110']"
+                    //                                                data-paddingbottom="['15','15','15','40']"
+                    //                                                data-paddingleft="['45','45','45','110']">GET STARTED NOW!</a>
+
+                    //                                         </li>`
+                    //     const ulEl = document.getElementById("mainSlider");
+                    //     ulEl.innerHTML += text;
+                    //}
+</script>
+
+<script>
+    const list = @Model.Sliders.ToList();
+    console.log(list);
+    for (let s of list) {
+        const text = `
+                            <div class="isotope-item">
+                                                <div class="image-gallery-item mb-0 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="700">
+                                                    <a href="portfolio-single-wide-slider.html">
+                                                        <span class="thumb-info thumb-info-centered-info thumb-info-no-borders">
+                                                            <span class="thumb-info-wrapper">
+                                                                <img src="img/projects/project-34.jpg" class="img-fluid" alt="">
+                                                                <span class="thumb-info-title">
+                                                                    <span class="thumb-info-inner">Project Title</span>
+                                                                    <span class="thumb-info-type">Project Type</span>
+                                                                </span>
+                                                                <span class="thumb-info-action">
+                                                                    <span class="thumb-info-action-icon"><i class="fas fa-plus"></i></span>
+                                                                </span>
+                                                            </span>
+                                                        </span>
+                                                    </a>
+                                                </div>
+                                            </div>`
+        const ulEl = document.getElementById("altSlider");
+        ulEl.innerHTML += text;
+    }
+</script>
