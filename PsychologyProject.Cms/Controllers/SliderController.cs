@@ -63,11 +63,33 @@ namespace PsychologyProject.Cms.Controllers
             _sliderService.TRemove(slider);
             return View(slider);
         }
-        [HttpPut]
+        [HttpPost]
         public IActionResult Update(Slider slider)
         {
-            _sliderService.TUpdate(slider);
-            return View(slider);
+            if (slider == null)
+            {
+                // Eğer gelen veriler hatalı ise veya null ise uygun bir şekilde işlem yapabilirsiniz.
+                return BadRequest("Güncelleme için gerekli veriler eksik veya hatalı.");
+            }
+
+            var hasSlider = _context.sliders.FirstOrDefault(slider => slider.Id == slider.Id);
+
+            if (hasSlider == null)
+            {
+                throw new Exception($"Bu id sahip ürün bulunmamakta");
+            }
+
+            // Güncelleme işlemleri
+          hasSlider.Title=slider.Title;
+            hasSlider.Text=slider.Text;
+            hasSlider.ImageUrl=slider.ImageUrl;
+            
+
+            _context.Update(hasSlider);
+            _context.SaveChanges();
+
+            // Güncelleme işlemi tamamlandıktan sonra belirli bir sayfaya yönlendirme yapabilirsiniz.
+            return RedirectToAction("Index");
         }
     }
 }

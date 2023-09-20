@@ -23,18 +23,47 @@ namespace PsychologyProject.Cms.Controllers
         [HttpGet]
         public IActionResult index()
         {
-            return View();
+            var values = _context.services.FirstOrDefault();
+            var values2 = _context.services.FirstOrDefault();
+            
+            return View(values);
         }
         [HttpPost]
-        public IActionResult Index(Service service, ServiceItem serviceItem)
+        public IActionResult Update(Service service,ServiceItem serviceItem)
         {
-		
-			_context.services.Add(service);  
-            _context.SaveChanges();
-            _context.serviceItem.Add(serviceItem);
-			_context.SaveChanges();
+            if (service== null)
+            {
+                // Eğer gelen veriler hatalı ise veya null ise uygun bir şekilde işlem yapabilirsiniz.
+                return BadRequest("Güncelleme için gerekli veriler eksik veya hatalı.");
+            }
 
-			return View();
+            var hasService= _context.services.FirstOrDefault(service=> service.Id == service.Id);
+
+            if (hasService== null)
+            {
+                throw new Exception($"Bu id sahip ürün bulunmamakta");
+            }
+
+            // Güncelleme işlemleri
+            hasService.Title = service.Title;
+            hasService.Description= service.Description;
+         
+            
+            
+
+            _context.Update(hasService);
+            _context.SaveChanges();
+
+            var hasServiceItem = _context.serviceItem.FirstOrDefault(serviceItem => serviceItem.Id == serviceItem.Id);
+
+            hasServiceItem.ServicesDescription = serviceItem.ServicesDescription;
+            hasServiceItem.ServicesTitle = serviceItem.ServicesTitle;
+            hasServiceItem.ServicesIcon = serviceItem.ServicesIcon;
+            _context.Update(hasServiceItem);
+            _context.SaveChanges();
+
+            // Güncelleme işlemi tamamlandıktan sonra belirli bir sayfaya yönlendirme yapabilirsiniz.
+            return RedirectToAction("Index");
         }
 
     }
